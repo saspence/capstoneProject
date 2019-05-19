@@ -1,6 +1,7 @@
 body{
   font-family: sans-serif;
   background: #FFFBF0;
+  color: black;
 }
 
 .navbar{
@@ -19,9 +20,23 @@ body{
   padding-left: 2em;
 }
 
+#main{
+  width:calc(100%-300px);
+  padding: 10 px;
+}
+
+#main h1{
+  text-align: center;
+}
+
+#topNav{
+  background: #00695C;
+}
+
 .wrapper {
-  display: flex;
+  /* display: flex; */
   align-items: stretch;
+  float: left;
 }
 
 #sidebar{

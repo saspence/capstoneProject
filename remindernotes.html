@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>EmpowerHealth</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm" id="topNav">
+  <!--Button-->
+        <button type="button" id="sidebarCollapse" class="btn btn-info">
+          <i class="fas fa-align-left"></i>
+          <span>Menu</span>
+        </button>
+
+    <a class="navbar-brand" href="index.html">EmpowerHealth</a>
+</nav>
+
+<div class="wrapper">
+  <!-- Start of Sidebar-->
+  <nav id="sidebar">
+    <ul class="sidebar-list">
+      <li> <!-- 1st Menu Item -->
+        <a href="index.html" id="catTitle"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+      </li>
+
+      <li data-toggle="collapse" data-target="#medicalRecords" class="collasped">  <!-- 2nd Menu Item -->
+        <a href="#" id="catTitle"></a><i class="fas fa-chevron-down"></i>Medical Records</a>
+      </li>
+      <!-- Drop down menu items-->
+      <ul class="sub-menu collapse" id="medicalRecords">
+        <li>
+          <a href="medicalreports.html"><i class="fas fa-notes-medical"></i>Medical Reports</a>
+        </li>
+        <li>
+          <a href="labresults.html"><i class="fas fa-flask active"></i>Lab Results</a>
+        </li>
+        <li>
+          <a href="diagnoses.html"><i class="fas fa-stethoscope"></i>Diagnoses</a>
+        </li>
+        <li>
+          <a href="medications.html"><i class="fas fa-prescription-bottle-alt"></i>Medications</a>
+        </li>
+        <li>
+          <a href="allergies.html"><i class="fas fa-exclamation-triangle"></i>Allergies</a>
+        </li>
+        <li>
+          <a href="immunizations.html"><i class="fas fa-syringe"></i>Immunizations</a>
+        </li>
+        <li>
+          <a href="vitalsigns.html"><i class="fas fa-heartbeat"></i>Vital Signs</a>
+        </li>
+      </ul>
+
+      <li> <!-- 3rd Menu Item -->
+        <a href="appointments.html" id="catTitle"><i class="far fa-calendar-alt"></i>Appointments</a>
+      </li>
+
+      <li> <!-- 4th Menu Item -->
+        <a href="messages.html" id="catTitle"><i class="fas fa-inbox"></i>Messages</a>
+      </li>
+
+      <li class="active"> <!-- 5th Menu Item -->
+        <a href="remindernotes.html" id="catTitle"><i class="far fa-sticky-note"></i>Reminder Notes</a>
+      </li>
+
+      <li> <!-- 6th Menu Item -->
+        <a href="paybill.html" id="catTitle"><i class="fas fa-file-invoice-dollar"></i>Pay Bill</a>
+      </li>
+
+      <li> <!-- 7th Menu Item -->
+        <a href="research.html" id="catTitle"><i class="fas fa-search"></i>Research</a>
+      </li>
+
+      <li> <!-- 8th Menu Item -->
+        <a href="userprofile.html" id="catTitle"><i class="fas fa-user"></i>User Profile</a>
+      </li>
+
+    </ul>
+  </nav> <!--End of sidebar nav-->
+
+</div> <!--End of Wrapper div-->
+
+<div class="container" id="main">
+<h1>Reminder Notes</h1>
+
+</div><!-- container -->
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

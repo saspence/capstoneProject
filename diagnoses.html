@@ -6,85 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>EmpowerHealth</title>
 </head>
 
-<nav class="navbar navbar-expand-sm">
+<body>
+<nav class="navbar navbar-expand-sm" id="topNav">
   <!--Button-->
         <button type="button" id="sidebarCollapse" class="btn btn-info">
           <i class="fas fa-align-left"></i>
           <span>Menu</span>
         </button>
 
-    <a class="navbar-brand" href="#">EmpowerHealth</a>
+    <a class="navbar-brand" href="index.html">EmpowerHealth</a>
 </nav>
 
 <div class="wrapper">
   <!-- Start of Sidebar-->
   <nav id="sidebar">
     <ul class="sidebar-list">
-      <li class="active">
-        <a href="#"><img src="images/Appointments Icon.png" alt="Appointments" class="center">Appointments</a>
+      <li> <!-- 1st Menu Item -->
+        <a href="index.html" id="catTitle"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
       </li>
 
-      <li>
-        <a href="#"><img src="images/Diagnoses Icon.png" alt="Diagnoses" class="center">Diagnoses</a>
+      <li data-toggle="collapse" data-target="#medicalRecords" class="collasped active">  <!-- 2nd Menu Item -->
+        <a href="#" id="catTitle"></a><i class="fas fa-chevron-down"></i>Medical Records</a>
+      </li>
+      <!-- Drop down menu items-->
+      <ul class="sub-menu collapse" id="medicalRecords">
+        <li>
+          <a href="medicalreports.html"><i class="fas fa-notes-medical"></i>Medical Reports</a>
+        </li>
+        <li>
+          <a href="labresults.html"><i class="fas fa-flask"></i>Lab Results</a>
+        </li>
+        <li class="active">
+          <a href="diagnoses.html"><i class="fas fa-stethoscope"></i>Diagnoses</a>
+        </li>
+        <li>
+          <a href="medications.html"><i class="fas fa-prescription-bottle-alt"></i>Medications</a>
+        </li>
+        <li>
+          <a href="allergies.html"><i class="fas fa-exclamation-triangle"></i>Allergies</a>
+        </li>
+        <li>
+          <a href="immunizations.html"><i class="fas fa-syringe"></i>Immunizations</a>
+        </li>
+        <li>
+          <a href="vitalsigns.html"><i class="fas fa-heartbeat"></i>Vital Signs</a>
+        </li>
+      </ul>
+
+      <li> <!-- 3rd Menu Item -->
+        <a href="appointments.html" id="catTitle"><i class="far fa-calendar-alt"></i>Appointments</a>
       </li>
 
-      <li>
-        <a href="#"><img src="images/Medications Icon.png" alt="Medications" class="center">Medications</a>
+      <li> <!-- 4th Menu Item -->
+        <a href="messages.html" id="catTitle"><i class="fas fa-inbox"></i>Messages</a>
       </li>
 
-      <li>
-        <a href="#"><img src="images/allergies Icon.png" alt="Allergies" class="center">Allergies</a>
+      <li> <!-- 5th Menu Item -->
+        <a href="remindernotes.html" id="catTitle"><i class="far fa-sticky-note"></i>Reminder Notes</a>
       </li>
 
-      <li>
-        <a href="#"><img src="images/Vital Signs Icon.png" alt="Vital Signs" class="center">Vital Signs</a>
+      <li> <!-- 6th Menu Item -->
+        <a href="paybill.html" id="catTitle"><i class="fas fa-file-invoice-dollar"></i>Pay Bill</a>
       </li>
 
-      <li>
-        <a href="#"><img src="images/Lab Results Icon.png" alt="Lab Results" class="center">Lab Results</a>
+      <li> <!-- 7th Menu Item -->
+        <a href="research.html" id="catTitle"><i class="fas fa-search"></i>Research</a>
       </li>
 
-      <li>
-        <a href="#"><img src="images/Medical Reports Icon.png" alt="Medical Reports" class="center">Medical Reports</a>
-      </li>
-
-      <li>
-        <a href="#"><img src="images/Immunizations Icon.png" alt="Immunizations" class="center">Immunizations</a>
-      </li>
-
-      <li>
-        <a href="#"><img src="images/Research Icon.png" alt="Research" class="center">Research</a>
-      </li>
-
-      <li>
-        <a href="#"><img src="images/Reminder Notes Icon.png" alt="Reminder Notes" class="center">Reminder Notes</a>
-      </li>
-
-      <li>
-        <a href="#"><img src="images/Messages Icon.png" alt="Messages" class="center">Messages</a>
-      </li>
-
-      <li>
-        <a href="#"><img src="images/Pay Bill.png" alt="Pay Bill" class="center">Pay Bill</a>
+      <li> <!-- 8th Menu Item -->
+        <a href="userprofile.html" id="catTitle"><i class="fas fa-user"></i>User Profile</a>
       </li>
 
     </ul>
   </nav> <!--End of sidebar nav-->
 
-
-
 </div> <!--End of Wrapper div-->
 
-
-
-
-<body>
-<div class="container">
-
+<div class="container" id="main">
+<h1>Diagnoses</h1>
 
 </div><!-- container -->
 

@@ -1,5 +1,4 @@
 body{
-  font-family: sans-serif;
   background: #FFFBF0;
   color: black;
 }
@@ -27,13 +26,14 @@ body{
 #main{
   width:calc(100%-400px);
   padding: 10px;
-/*  margin-top: 20px; */
+  /*  margin-top: 20px; */
 
 }
 
 #main h1{
   text-align: left;
   padding: 10px;
+  margin-top: 10px;
   }
 
 #main i{
@@ -141,21 +141,23 @@ a, a:hover, a:focus{
 }
 
 .btn{
-  background-color: #FFFBF0;
-  color: #2A9D8F;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #2A9D8F;
+  color: #FFFBF0;
   outline: 0;
-  margin: 0 5px;
- }
+  border-radius: 0;
+}
 
  .btn:hover{
-   background-color: #2A9D8F;
-   color: #FFFBF0;
+   background-color: #FFFBF0;
+   color: #2A9D8F;
  }
 
  .btn-div{
    background-color: #2A9D8F;
    margin: 0;
+   padding: 0;
+   outline: 0;
+   border-radius: 0;
  }
 
  #appt{
@@ -183,4 +185,22 @@ a, a:hover, a:focus{
 
 #column2 {
   margin-left: 50px;
+}
+
+#btndiv {
+  margin: 0;
+  padding: 0;
+}
+
+#menubtn {
+  outline: 0;
+  border-radius: 0;
+}
+#logout {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 5px;
+}
+
+#state {
+  font-family: sans-serif;
 }

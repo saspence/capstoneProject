@@ -7,8 +7,10 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/messages.css">
   <title>EmpowerHealth</title>
 </head>
 
@@ -99,6 +101,179 @@
   </div>
 <h1><i class="fas fa-inbox"></i>Messages</h1>
 
+
+
+
+<div class="row" id="boxStatus">
+    <div class="col-sm-3">
+        <a href="mail-compose.html" class="btn btn-danger btn-block btn-compose-email">Compose Email</a>
+    </div>
+    <div class="col">
+        <ul class="nav nav-pills nav-stacked nav-email shadow mb-20">
+            <li class="active">
+                <a href="#mail-inbox.html">
+                    <i class="fa fa-inbox"></i>Inbox  <span class="badge badge-primary pull-right">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="#mail-compose.html"><i class="fa fa-envelope-o"></i>Sent</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-star"></i>Important<span class="badge badge-warning pull-right">1</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-file-text-o"></i>Drafts <span class="badge badge-info pull-right inbox-notification">1</span>
+                </a>
+            </li>
+            <li><a href="#"> <i class="fa fa-trash-o"></i>Trash</a></li>
+        </ul><!-- /.nav -->
+
+    </div> <!-- end col -->
+  </div> <!-- end row -->
+  <div class="row">
+    <div class="col">
+        <div class="panel rounded shadow panel-teal">
+            <div class="panel-heading">
+                <div class="pull-left">
+                    <h3 class="panel-title">Inbox (2)</h3>
+                </div>
+                <div class="clearfix"></div>
+            </div><!-- /.panel-heading -->
+            <div class="panel-sub-heading inner-all">
+                <div class="pull-left">
+                    <ul class="list-inline no-margin">
+                        <li class="list-inline-item">
+                            <div class="ckbox ckbox-theme">
+                                <input id="checkbox-group" type="checkbox" class="mail-group-checkbox">
+                                <label for="checkbox-group"></label>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    All <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">None</a></li>
+                                    <li><a href="#">Read</a></li>
+                                    <li><a href="#">Unread</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="btn-group">
+                                <button class="btn btn-default btn-sm tooltips" type="button" data-toggle="tooltip" data-container="body" title="" data-original-title="Archive"><i class="fa fa-inbox"></i></button>
+                                <button class="btn btn-default btn-sm tooltips" type="button" data-toggle="tooltip" data-container="body" title="" data-original-title="Report Spam"><i class="fa fa-warning"></i></button>
+                                <button class="btn btn-default btn-sm tooltips" type="button" data-toggle="tooltip" data-container="body" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></button>
+                            </div>
+                        </li>
+                        <li class="list-inline-item hidden-xs">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm">More</button>
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-edit"></i> Mark as read</a></li>
+                                    <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <ul class="list-inline no-margin">
+                        <li class="list-inline-item hidden-xs"><span class="text-muted">Showing 1-3 of 3 messages</span></li>
+                        <li class="list-inline-item">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-default"><i class="fa fa-angle-left"></i></a>
+                                <a href="#" class="btn btn-sm btn-default"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </li>
+                      </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div><!-- /.panel-sub-heading -->
+            <div class="panel-body no-padding">
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-email">
+                        <tbody>
+                        <tr class="unread">
+                            <td>
+                                <div class="ckbox ckbox-theme">
+                                    <input id="checkbox1" type="checkbox" class="mail-checkbox">
+                                    <label for="checkbox1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#" class="star star-checked"><i class="fa fa-star"></i></a>
+                            </td>
+                            <td>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h4 class="text-primary">Dr. Jill Smith</h4>
+                                        <p class="email-summary"><strong>Lab Results</strong> I have reviewed your most recent results.  Things are looking good!<span class="badge badge-primary">New</span> </p>
+                                        <span class="media-meta">Today at 6:16am</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="unread">
+                            <td>
+                                <div class="ckbox ckbox-theme">
+                                    <input id="checkbox3" type="checkbox" class="mail-checkbox">
+                                    <label for="checkbox3"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#" class="star"><i class="fa fa-star"></i></a>
+                            </td>
+                            <td>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h4 class="text-primary">Dr. Martin Morse</h4>
+                                        <p class="email-summary"><strong>Re: Follow Up</strong> I do not think we have further need for follow up at this time, howev...<span class="badge badge-primary">New</span></p>
+                                        <span class="media-meta">Yesterday at 4:35pm</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ckbox ckbox-theme">
+                                    <input id="checkbox4" type="checkbox" class="mail-checkbox">
+                                    <label for="checkbox4"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#" class="star"><i class="fa fa-star"></i></a>
+                            </td>
+                            <td>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h4 class="text-danger">Me</h4>
+                                        <p class="email-summary"><strong>Question about medication</strong> Should I be having so many symptoms from...<span class="badge badge-info">Draft</span></p>
+                                        <span class="media-meta">Jan 02</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div><!-- /.table-responsive -->
+
+            </div><!-- /.panel-body -->
+        </div><!-- /.panel -->
+    </div>
+</div> <!-- end row -->
 </div><!-- container -->
 
 <script src="js/jquery.slim.min.js"></script>

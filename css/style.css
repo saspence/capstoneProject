@@ -16,7 +16,7 @@ body{
 .navbar-brand{
   font-family: 'Montserrat', sans-serif;
   font-size: 2.3em;
-  padding-left: 1em;
+  padding-left: 5px;
 }
 
 .userProfile{
@@ -46,7 +46,7 @@ body{
 }
 
 #topNav i{
-  padding-right: 1em;
+  padding-right: .5em;
 }
 
 .wrapper {
@@ -201,6 +201,69 @@ a, a:hover, a:focus{
   border-radius: 5px;
 }
 
-#state {
-  font-family: sans-serif;
+#stickyNote {
+  padding: 0;
+  color: #fff;
+  font-size: 1em;
+}
+
+#stickyNote h2, p{
+  font-size: 1em;
+  font-weight: normal;
+}
+
+#stickyNote ul, li {
+  list-style: none;
+}
+
+#stickyNote ul{
+  overflow: hidden;
+  padding: 3em;
+}
+
+#stickyNote ul li a {
+  text-decoration: none;
+  color: #000;
+  background: #E9C46A;
+  display: block;
+  height: 15em;
+  width: 15em;
+  padding: 1em;
+  /* Firef ox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+#stickyNote ul li {
+  margin: 1em;
+  float: left;
+}
+
+#stickyNote ul li h2{
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#stickyNote ul li p{
+  font-size: 1.5em;
+}
+
+#stickyNote ul li a:hover, #stickyNote ul li a:focus{
+  -moz-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+
+#calendar {
+  max-width: 900px;
+  margin: 40px auto;
 }

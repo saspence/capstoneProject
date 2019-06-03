@@ -97,9 +97,54 @@
       <span>Menu</span>
     </button>
   </div>
-<h1><i class="far fa-sticky-note"></i>Reminder Notes</h1>
+  <h1><i class="far fa-sticky-note"></i>Reminder Notes</h1>
+  <div class="row">
+    <div class="col">
+      <form id="notesEntry">
+        <div class="form-row">
+          <div class="form-group col-6">
+            <input type="text" class="form-control" placeholder="Note Title" />
+          </div> <!-- end form group -->
+        </div> <!-- end form row -->
+        <div class="form-row">
+          <div class="form-group col-6">
+            <textarea class="form-control" rows="5" placeholder="Type Note Text Here"></textarea>
+          </div> <!-- end col -->
+        </div> <!-- end row -->
+        <div class="form-row">
+          <div class="form-group col offset-2">
+            <button type="button" class="btn" id="logout">Save Reminder Note</button>
+          </div> <!-- end col -->
+        </div> <!-- end row -->
+      </form>
+    </div> <!-- end col -->
+  </div> <!-- end row -->
+  <div class="form-group" id="stickyNote">
+    <ul>
+      <li>
+        <a href="#">
+          <h2>Title #1</h2>
+          <p>Text Content #1</p>
+        </a>
+      </li>
 
-</div><!-- container -->
+      <li>
+        <a href="#">
+          <h2>Title #2</h2>
+          <p>Text Content #2</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <h2>Title #3</h2>
+          <p>Text Content #3</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div><!-- end container -->
 
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>

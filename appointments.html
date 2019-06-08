@@ -69,7 +69,7 @@
       </li>
 
       <li> <!-- 5th Menu Item -->
-        <a href="remindernotes.html" id="catTitle"><i class="far fa-sticky-note"></i>Reminder Notes</a>
+        <a href="remindernotes 2.html" id="catTitle"><i class="far fa-sticky-note"></i>Reminder Notes</a>
       </li>
 
       <li> <!-- 6th Menu Item -->
@@ -97,12 +97,50 @@
       <span>Menu</span>
     </button>
   </div>
-  <h1><i class="far fa-calendar-alt"></i>Appointments</h1>
-  <div class="row">
+  <h1><i class="far fa-calendar-alt"></i>Upcoming Appointments</h1>
+  <div class="row" id="appointmentTable">
     <div class="col">
-      <div id="calendar"></div>
-    </div> <!-- end col -->
-  </div> <!-- end row -->
+      <table class="table table-hover"
+      <thead>
+        <tr>
+          <th scope="col">
+            Date and Time
+          </th>
+          <th scope="col">
+            Provider
+          </th>
+          <th scope="col">
+            Location
+          </th>
+          <th scope="col">
+            Reason for Visit
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">07/31/2019 at 1:30 pm</th>
+          <td>Dr. Jim Smith</td>
+          <td>Main Office, 100 Main Street, Bluffton</td>
+          <td>Follow-Up Visit</td>
+        </tr>
+        <tr>
+          <th scope="row">10/01/2019 at 10:00 am</th>
+          <td>Dr. Cathy Butler</td>
+          <td>Portland Office, 232 Wayne Street, Portland</td>
+          <td>6-Month Checkup</td>
+        </tr>
+        <tr>
+          <th scope="row">07/06/2019 at 3:00 pm</th>
+          <td>Dr. Raj Patel</td>
+          <td>Hospital Office Building, 800 Hospital Way, Fort Wayne</td>
+          <td>Orthopedic Consultation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 
 </div><!-- container -->
 

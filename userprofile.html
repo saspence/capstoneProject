@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>EmpowerHealth</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm" id="topNav">
+    <div>
+      <a class="navbar-brand mr-auto" href="index.html"><i class="fas fa-heartbeat"></i>EmpowerHealth</a>
+    </div>
+
+    <div class="ml-auto">
+      <button type="button" id="logout" class="nav-item btn">Log Out</button>
+    </div>
+
+  </nav>
+
+<div class="wrapper">
+  <!-- Start of Sidebar-->
+  <nav id="sidebar">
+    <ul class="sidebar-list">
+      <li> <!-- 1st Menu Item -->
+        <a href="index.html" id="catTitle"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+      </li>
+
+      <li data-toggle="collapse" data-target="#medicalRecords" class="collasped">  <!-- 2nd Menu Item -->
+        <a href="#" id="catTitle"></a><i class="fas fa-chevron-down"></i>Medical Records</a>
+      </li>
+      <!-- Drop down menu items-->
+      <ul class="sub-menu collapse" id="medicalRecords">
+        <li>
+          <a href="medicalreports.html"><i class="fas fa-notes-medical"></i>Medical Reports</a>
+        </li>
+        <li>
+          <a href="labresults.html"><i class="fas fa-flask active"></i>Lab Results</a>
+        </li>
+        <li>
+          <a href="diagnoses.html"><i class="fas fa-stethoscope"></i>Diagnoses</a>
+        </li>
+        <li>
+          <a href="medications.html"><i class="fas fa-prescription-bottle-alt"></i>Medications</a>
+        </li>
+        <li>
+          <a href="allergies.html"><i class="fas fa-exclamation-triangle"></i>Allergies</a>
+        </li>
+        <li>
+          <a href="immunizations.html"><i class="fas fa-syringe"></i>Immunizations</a>
+        </li>
+        <li>
+          <a href="vitalsigns.html"><i class="fas fa-file-medical-alt"></i>Vital Signs</a>
+        </li>
+      </ul>
+
+      <li> <!-- 3rd Menu Item -->
+        <a href="appointments.html" id="catTitle"><i class="far fa-calendar-alt"></i>Appointments</a>
+      </li>
+
+      <li> <!-- 4th Menu Item -->
+        <a href="messages.html" id="catTitle"><i class="fas fa-inbox"></i>Messages</a>
+      </li>
+
+      <li> <!-- 5th Menu Item -->
+        <a href="remindernotes 2.html" id="catTitle"><i class="far fa-sticky-note"></i>Reminder Notes</a>
+      </li>
+
+      <li> <!-- 6th Menu Item -->
+        <a href="paybill.html" id="catTitle"><i class="fas fa-file-invoice-dollar"></i>Pay Bill</a>
+      </li>
+
+      <li> <!-- 7th Menu Item -->
+        <a href="research.html" id="catTitle"><i class="fas fa-search"></i>Research</a>
+      </li>
+
+      <li class="active"> <!-- 8th Menu Item -->
+        <a href="userprofile.html" id="catTitle">
+          <i class="fas fa-user"></i>User Profile
+        </a>
+      </li>
+
+    </ul>
+  </nav> <!--End of sidebar nav-->
+
+</div> <!--End of Wrapper div-->
+
+<div class="container" id="main">
+  <!--Button-->
+  <div id="btndiv">
+    <button type="button" id="sidebarCollapse" class="btn btn-info">
+      <i class="fas fa-align-left"></i>
+      <span>Menu</span>
+    </button>
+  </div>
+<h1><i class="fas fa-user"></i>User Profile</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div id="userHeading">
+        <h2 class="text-left">Profile Information</h2>
+      </div>
+        <form id="profileForm">
+          <div class="form-row">
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="First Name" autofocus/>
+            </div> <!-- end col -->
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="Last Name"/>
+            </div> <!-- end col -->
+          </div> <!-- end form row -->
+
+          <div class="form-row">
+            <div class="form-group col">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Street Address" />
+            </div> <!-- End form-group -->
+          </div> <!-- End row -->
+            <div class="form-row">
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Additional Street Address" />
+              </div> <!-- End form-group -->
+            </div> <!-- End row -->
+            <div class="form-row">
+              <div class="form-group col-5">
+                <input type="text" class="form-control" id="inputCity" placeholder="City" />
+              </div> <!-- End form-group -->
+              <div class="form-group col-4">
+                <select class="custom-select">
+                  <option value="" selected="selected">Select a State</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+
+              </div> <!-- End form-group -->
+              <div class="form-group col-3">
+                <input type="text" class="form-control" id="inputZip" placeholder="Zip" pattern="\d{5}([\-]\d{4})?" title="Must be 99999 or 99999-9999"/>
+              </div> <!-- End form-group -->
+            </div> <!-- End row -->
+            <div class="form-row">
+              <div class="form-group col-6">
+                <input type="text" class="form-control" id="inputHomePhone" placeholder="Home Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999"/>
+              </div> <!-- End form-group -->
+            </div> <!-- End row -->
+
+                <div class="row">
+                  <div class="col-8 offset-2">
+                    <button type="submit" class="btn btn-danger btn-submit" style="width: 100%; margin-top: 10px;">Update Profile Information</button>
+                  </div>  <!-- end column div -->
+                </div> <!-- end row div -->
+
+
+
+        </form>
+  </div> <!-- end of col for first form -->
+
+  <div class="col-sm-12 col-md-6">
+    <div id="userHeading">
+      <h2 class="text-left">Alert Preferences</h2>
+    </div>
+    <form id="alertPref">
+    <div class="form-row">
+      <div class="form-group col">
+        <input type="text" class="form-control" id="inputCellPhone" placeholder="Cell Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999"/>
+      </div> <!-- End form-group -->
+
+      <div class="form-group col">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" />
+      </div> <!-- End form-group -->
+    </div> <!-- End row -->
+
+      <div class="form-group row">
+        <div class="col-6">Updates to Lab Results</div>
+          <div class="col-6">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="labText" />
+              <label class="form-check-label" for="labText">Text</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="labCall" />
+              <label class="form-check-label" for="labCall">Phone Call</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="labEmail" />
+              <label class="form-check-label" for="labEmail">Email</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="labNone" />
+              <label class="form-check-label" for="labNone">None</label>
+            </div>
+          </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-6">Updates to Medications</div>
+          <div class="col-6">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="medText" />
+              <label class="form-check-label" for="medText">Text</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="medCall" />
+              <label class="form-check-label" for="medCall">Phone Call</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="medEmail" />
+              <label class="form-check-label" for="medEmail">Email</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="medNone" />
+              <label class="form-check-label" for="medNone">None</label>
+            </div>
+          </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-6">Message from Provider</div>
+          <div class="col-6">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="msgText" />
+              <label class="form-check-label" for="msgText">Text</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="msgCall" />
+              <label class="form-check-label" for="msgCall">Phone Call</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="msgEmail" />
+              <label class="form-check-label" for="msgEmail">Email</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="msgNone" />
+              <label class="form-check-label" for="msgNone">None</label>
+            </div>
+          </div>  <!-- end column div -->
+        </div> <!-- end row div -->
+            <div class="row">
+              <div class="col-8 offset-2">
+                <button type="submit" class="btn btn-danger btn-submit" style="width: 100%; margin-top: 10px;">Update Alert Preferences</button>
+
+
+          </div>
+      </div>
+  </div> <!-- end row before form -->
+  </form>
+</div> <!-- end of row -->
+
+
+</div><!-- container -->
+
+<section class="container m-0">
+  <div class="row" style="background: #264653; width: 100vw;">
+    <footer>
+      <p class="text-white">&copy; 2019 Angie Spencer.  All rights reserved.</p>
+    </footer>
+  </div>
+</section>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

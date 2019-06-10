@@ -13,22 +13,22 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-sm" id="topNav">
-  <div>
-    <a class="navbar-brand mr-auto" href="index.html"><i class="fas fa-heartbeat"></i>EmpowerHealth</a>
-  </div>
+  <nav class="navbar navbar-expand-sm" id="topNav">
+    <div>
+      <a class="navbar-brand mr-auto" href="index.html"><i class="fas fa-heartbeat"></i>EmpowerHealth</a>
+    </div>
 
-  <div class="ml-auto">
-    <button type="button" id="logout" class="nav-item btn">Log Out</button>
-  </div>
+    <div class="ml-auto">
+      <button type="button" id="logout" class="nav-item btn">Log Out</button>
+    </div>
 
-</nav>
+  </nav>
 
 <div class="wrapper">
   <!-- Start of Sidebar-->
   <nav id="sidebar">
     <ul class="sidebar-list">
-      <li class="active"> <!-- 1st Menu Item -->
+      <li> <!-- 1st Menu Item -->
         <a href="index.html" id="catTitle"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
       </li>
 
@@ -68,7 +68,7 @@
         <a href="messages.html" id="catTitle"><i class="fas fa-inbox"></i>Messages</a>
       </li>
 
-      <li> <!-- 5th Menu Item -->
+      <li class="active"> <!-- 5th Menu Item -->
         <a href="remindernotes 2.html" id="catTitle"><i class="far fa-sticky-note"></i>Reminder Notes</a>
       </li>
 
@@ -97,70 +97,57 @@
       <span>Menu</span>
     </button>
   </div>
+  <h1><i class="far fa-sticky-note"></i>Reminder Notes</h1>
+  <div class="row" id="userHeading" style="height: 2.1em;"><h4>Enter Information to Remember</h4></div>
 
-<h1><i class="fas fa-tachometer-alt"></i>Dashboard</h1>
-  <div class="row">
-    <div class="col-md-6">
-      <section class="card" id="appt">
-        <div class="card-body">
-          <h2 class="card-title"><i class="far fa-calendar-alt"></i>Upcoming Appointments</h2>
-          <p class="card-text">
-            Your next appointment is Wednesday, July 31, 2019, at 1:30 pm with Dr. Jim Smith.
-          </p>
-        </div><!-- end of card body div -->
-        <div class="card-footer">
-          <a href="appointments.html" class="card-link">Click for more details</a>
-        </div>
-      </section>
-    </div> <!-- end of col div -->
+<div class="row" id="noteEntry">
+    <div class="col">
+      <form id="notesEntry">
+        <div class="form-row">
+          <div class="form-group col-6">
+            <input type="text" class="form-control" placeholder="Note Title" id="noteHead"/>
+          </div> <!-- end form group -->
+        </div> <!-- end form row -->
+        <div class="form-row">
+          <div class="form-group col-6">
+            <textarea maxlength="300" class="form-control" rows="5" placeholder="Type Note Text Here (maximum length 300 characters)" id="noteBody"></textarea>
+          </div> <!-- end col -->
+        </div> <!-- end row -->
+        <div class="form-row">
+          <div class="form-group col offset-2">
+            <button type="button" class="btn btn-danger btn-submit" onclick="saveBtn_onclick()">Save Reminder Note</button>
+          </div> <!-- end col -->
+        </div> <!-- end row -->
+      </form>
+    </div> <!-- end col -->
+  </div> <!-- end row -->
 
-    <div class="col-md-6">
-      <section class="card" id="meds">
-        <div class="card-body">
-          <h2 class="card-title"><i class="fas fa-prescription-bottle-alt"></i>New Medications</h2>
-          <p class="card-text">
-            You have 3 new medications.
-          </p>
-        </div> <!-- end of card body div -->
-        <div class="card-footer">
-          <a href="medications.html" class="card-link">Click for more details</a>
-        </div>
-      </section>
-    </div> <!-- end of col div -->
+  <div class="form-group" id="stickyNote">
+<!--    <ul>
+      <li>
+        <a href="#">
+          <h2>Title #1</h2>
+          <p>Text Content #1</p>
+        </a>
+      </li>
 
-  </div> <!-- end of row div -->
+      <li>
+        <a href="#">
+          <h2>Title #2</h2>
+          <p>Text Content #2</p>
+        </a>
+      </li>
 
-  <div class="row">
-    <div class="col-md-6">
-      <section class="card" id="msg">
-        <div class="card-body">
-          <h2 class="card-title"><i class="fas fa-inbox"></i>Messages</h2>
-          <p class="card-text">
-            You have 1 unread message.
-          </p>
-        </div><!-- end of card body div -->
-        <div class="card-footer">
-          <a href="messages.html" class="card-link">Click for more details</a>
-        </div>
-      </section>
-    </div> <!-- end of col div -->
+      <li>
+        <a href="#">
+          <h2>Title #3</h2>
+          <p>Text Content #3</p>
+        </a>
+      </li>
+    </ul> -->
+  </div>
 
-    <div class="col-md-6">
-      <section class="card" id="labs">
-        <div class="card-body">
-          <h2 class="card-title"><i class="fas fa-flask"></i>Lab Results</h2>
-          <p class="card-text">
-            You have 1 pending lab result.
-          </p>
-        </div> <!-- end of card body div -->
-        <div class="card-footer">
-          <a href="labresults.html" class="card-link">Click for more details</a>
-        </div>
-      </section>
-    </div> <!-- end of col div -->
-
-  </div> <!-- end of row div -->
-</div><!-- container -->
+</div><!-- end container -->
 
 <section class="container m-0">
   <div class="row" style="background: #264653; width: 100vw;">
@@ -169,7 +156,6 @@
     </footer>
   </div>
 </section>
-
 
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/messages.css">
+  <title>EmpowerHealth</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm" id="topNav">
+    <div>
+      <a class="navbar-brand mr-auto" href="index.html"><i class="fas fa-heartbeat"></i>EmpowerHealth</a>
+    </div>
+
+    <div class="ml-auto">
+      <button type="button" id="logout" class="nav-item btn">Log Out</button>
+    </div>
+
+  </nav>
+
+<div class="wrapper">
+  <!-- Start of Sidebar-->
+  <nav id="sidebar">
+    <ul class="sidebar-list">
+      <li> <!-- 1st Menu Item -->
+        <a href="index.html" id="catTitle"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+      </li>
+
+      <li data-toggle="collapse" data-target="#medicalRecords" class="collasped">  <!-- 2nd Menu Item -->
+        <a href="#" id="catTitle"></a><i class="fas fa-chevron-down"></i>Medical Records</a>
+      </li>
+      <!-- Drop down menu items-->
+      <ul class="sub-menu collapse" id="medicalRecords">
+        <li>
+          <a href="medicalreports.html"><i class="fas fa-notes-medical"></i>Medical Reports</a>
+        </li>
+        <li>
+          <a href="labresults.html"><i class="fas fa-flask active"></i>Lab Results</a>
+        </li>
+        <li>
+          <a href="diagnoses.html"><i class="fas fa-stethoscope"></i>Diagnoses</a>
+        </li>
+        <li>
+          <a href="medications.html"><i class="fas fa-prescription-bottle-alt"></i>Medications</a>
+        </li>
+        <li>
+          <a href="allergies.html"><i class="fas fa-exclamation-triangle"></i>Allergies</a>
+        </li>
+        <li>
+          <a href="immunizations.html"><i class="fas fa-syringe"></i>Immunizations</a>
+        </li>
+        <li>
+          <a href="vitalsigns.html"><i class="fas fa-file-medical-alt"></i>Vital Signs</a>
+        </li>
+      </ul>
+
+      <li> <!-- 3rd Menu Item -->
+        <a href="appointments.html" id="catTitle"><i class="far fa-calendar-alt"></i>Appointments</a>
+      </li>
+
+      <li class="active"> <!-- 4th Menu Item -->
+        <a href="messages.html" id="catTitle"><i class="fas fa-inbox"></i>Messages</a>
+      </li>
+
+      <li> <!-- 5th Menu Item -->
+        <a href="remindernotes 2.html" id="catTitle"><i class="far fa-sticky-note"></i>Reminder Notes</a>
+      </li>
+
+      <li> <!-- 6th Menu Item -->
+        <a href="paybill.html" id="catTitle"><i class="fas fa-file-invoice-dollar"></i>Pay Bill</a>
+      </li>
+
+      <li> <!-- 7th Menu Item -->
+        <a href="research.html" id="catTitle"><i class="fas fa-search"></i>Research</a>
+      </li>
+
+      <li> <!-- 8th Menu Item -->
+        <a href="userprofile.html" id="catTitle"><i class="fas fa-user"></i>User Profile</a>
+      </li>
+
+    </ul>
+  </nav> <!--End of sidebar nav-->
+
+</div> <!--End of Wrapper div-->
+
+<div class="container" id="main">
+  <!--Button-->
+  <div id="btndiv">
+    <button type="button" id="sidebarCollapse" class="btn btn-info">
+      <i class="fas fa-align-left"></i>
+      <span>Menu</span>
+    </button>
+  </div>
+<h1><i class="fas fa-inbox"></i>Messages</h1>
+
+
+
+
+<div class="row" id="boxStatus">
+    <div class="col-sm-3">
+        <a href="#" class="btn btn-danger btn-block btn-compose-email">Compose Email</a>
+    </div>
+    <div class="col">
+        <ul class="nav nav-pills nav-stacked nav-email shadow mb-20">
+            <li class="active">
+                <a href="#mail-inbox.html">
+                    <i class="fa fa-inbox"></i>Inbox  <span class="badge badge-primary pull-right">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="#mail-compose.html"><i class="fa fa-envelope-o"></i>Sent</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-star"></i>Important<span class="badge badge-warning pull-right">1</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-file-text-o"></i>Drafts <span class="badge badge-info pull-right inbox-notification">1</span>
+                </a>
+            </li>
+            <li><a href="#"> <i class="fa fa-trash-o"></i>Trash</a></li>
+        </ul><!-- /.nav -->
+
+    </div> <!-- end col -->
+  </div> <!-- end row -->
+  <div class="row">
+    <div class="col">
+        <div class="panel rounded shadow panel-teal">
+            <div class="panel-heading">
+                <div class="pull-left">
+                    <h3 class="panel-title">Inbox (2)</h3>
+                </div>
+                <div class="clearfix"></div>
+            </div><!-- /.panel-heading -->
+            <div class="panel-sub-heading inner-all">
+                <div class="pull-left">
+                    <ul class="list-inline no-margin">
+                        <li class="list-inline-item">
+                            <div class="ckbox ckbox-theme">
+                                <input id="checkbox-group" type="checkbox" class="mail-group-checkbox">
+                                <label for="checkbox-group"></label>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    All <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">None</a></li>
+                                    <li><a href="#">Read</a></li>
+                                    <li><a href="#">Unread</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="btn-group">
+                                <button class="btn btn-default btn-sm tooltips" type="button" data-toggle="tooltip" data-container="body" title="" data-original-title="Archive"><i class="fa fa-inbox"></i></button>
+                                <button class="btn btn-default btn-sm tooltips" type="button" data-toggle="tooltip" data-container="body" title="" data-original-title="Report Spam"><i class="fa fa-warning"></i></button>
+                                <button class="btn btn-default btn-sm tooltips" type="button" data-toggle="tooltip" data-container="body" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></button>
+                            </div>
+                        </li>
+                        <li class="list-inline-item hidden-xs">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm">More</button>
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-edit"></i> Mark as read</a></li>
+                                    <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <ul class="list-inline no-margin">
+                        <li class="list-inline-item hidden-xs"><span class="text-muted">Showing 1-3 of 3 messages</span></li>
+                        <li class="list-inline-item">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-default"><i class="fa fa-angle-left"></i></a>
+                                <a href="#" class="btn btn-sm btn-default"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </li>
+                      </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div><!-- /.panel-sub-heading -->
+            <div class="panel-body no-padding">
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-email">
+                        <tbody>
+                        <tr class="unread">
+                            <td>
+                                <div class="ckbox ckbox-theme">
+                                    <input id="checkbox1" type="checkbox" class="mail-checkbox">
+                                    <label for="checkbox1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#" class="star star-checked"><i class="fa fa-star"></i></a>
+                            </td>
+                            <td>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h4 class="text-primary">Dr. Cathy Butler</h4>
+                                        <p class="email-summary"><strong>Lab Results</strong> I have reviewed your most recent results.  Things are looking good!<span class="badge badge-primary">New</span> </p>
+                                        <span class="media-meta">Today at 6:16am</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="unread">
+                            <td>
+                                <div class="ckbox ckbox-theme">
+                                    <input id="checkbox3" type="checkbox" class="mail-checkbox">
+                                    <label for="checkbox3"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#" class="star"><i class="fa fa-star"></i></a>
+                            </td>
+                            <td>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h4 class="text-primary">Dr. Jim Smith</h4>
+                                        <p class="email-summary"><strong>Re: Follow Up</strong> I do not think we have further need for follow up at this time, howev...<span class="badge badge-primary">New</span></p>
+                                        <span class="media-meta">Yesterday at 4:35pm</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ckbox ckbox-theme">
+                                    <input id="checkbox4" type="checkbox" class="mail-checkbox">
+                                    <label for="checkbox4"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#" class="star"><i class="fa fa-star"></i></a>
+                            </td>
+                            <td>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h4 class="text-danger">Me</h4>
+                                        <p class="email-summary"><strong>Question about medication</strong> Should I be having so many symptoms from...<span class="badge badge-info">Draft</span></p>
+                                        <span class="media-meta">Jan 02</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div><!-- /.table-responsive -->
+
+            </div><!-- /.panel-body -->
+        </div><!-- /.panel -->
+    </div>
+</div> <!-- end row -->
+</div><!-- container -->
+
+<section class="container m-0">
+  <div class="row" style="background: #264653; width: 100vw;">
+    <footer>
+      <p class="text-white">&copy; 2019 Angie Spencer.  All rights reserved.</p>
+    </footer>
+  </div>
+</section>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

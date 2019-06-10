@@ -13,26 +13,26 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-sm" id="topNav">
-  <div>
-    <a class="navbar-brand mr-auto" href="index.html"><i class="fas fa-heartbeat"></i>EmpowerHealth</a>
-  </div>
+  <nav class="navbar navbar-expand-sm" id="topNav">
+    <div>
+      <a class="navbar-brand mr-auto" href="index.html"><i class="fas fa-heartbeat"></i>EmpowerHealth</a>
+    </div>
 
-  <div class="ml-auto">
-    <button type="button" id="logout" class="nav-item btn">Log Out</button>
-  </div>
+    <div class="ml-auto">
+      <button type="button" id="logout" class="nav-item btn">Log Out</button>
+    </div>
 
-</nav>
+  </nav>
 
 <div class="wrapper">
   <!-- Start of Sidebar-->
   <nav id="sidebar">
     <ul class="sidebar-list">
-      <li class="active"> <!-- 1st Menu Item -->
+      <li> <!-- 1st Menu Item -->
         <a href="index.html" id="catTitle"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
       </li>
 
-      <li data-toggle="collapse" data-target="#medicalRecords" class="collasped">  <!-- 2nd Menu Item -->
+      <li data-toggle="collapse" data-target="#medicalRecords" class="collasped active">  <!-- 2nd Menu Item -->
         <a href="#" id="catTitle"></a><i class="fas fa-chevron-down"></i>Medical Records</a>
       </li>
       <!-- Drop down menu items-->
@@ -41,12 +41,12 @@
           <a href="medicalreports.html"><i class="fas fa-notes-medical"></i>Medical Reports</a>
         </li>
         <li>
-          <a href="labresults.html"><i class="fas fa-flask"></i>Lab Results</a>
+          <a href="labresults.html"><i class="fas fa-flask active"></i>Lab Results</a>
         </li>
         <li>
           <a href="diagnoses.html"><i class="fas fa-stethoscope"></i>Diagnoses</a>
         </li>
-        <li>
+        <li class="active">
           <a href="medications.html"><i class="fas fa-prescription-bottle-alt"></i>Medications</a>
         </li>
         <li>
@@ -97,69 +97,43 @@
       <span>Menu</span>
     </button>
   </div>
-
-<h1><i class="fas fa-tachometer-alt"></i>Dashboard</h1>
-  <div class="row">
-    <div class="col-md-6">
-      <section class="card" id="appt">
-        <div class="card-body">
-          <h2 class="card-title"><i class="far fa-calendar-alt"></i>Upcoming Appointments</h2>
-          <p class="card-text">
-            Your next appointment is Wednesday, July 31, 2019, at 1:30 pm with Dr. Jim Smith.
-          </p>
-        </div><!-- end of card body div -->
-        <div class="card-footer">
-          <a href="appointments.html" class="card-link">Click for more details</a>
-        </div>
-      </section>
-    </div> <!-- end of col div -->
-
-    <div class="col-md-6">
-      <section class="card" id="meds">
-        <div class="card-body">
-          <h2 class="card-title"><i class="fas fa-prescription-bottle-alt"></i>New Medications</h2>
-          <p class="card-text">
-            You have 3 new medications.
-          </p>
-        </div> <!-- end of card body div -->
-        <div class="card-footer">
-          <a href="medications.html" class="card-link">Click for more details</a>
-        </div>
-      </section>
-    </div> <!-- end of col div -->
-
-  </div> <!-- end of row div -->
-
-  <div class="row">
-    <div class="col-md-6">
-      <section class="card" id="msg">
-        <div class="card-body">
-          <h2 class="card-title"><i class="fas fa-inbox"></i>Messages</h2>
-          <p class="card-text">
-            You have 1 unread message.
-          </p>
-        </div><!-- end of card body div -->
-        <div class="card-footer">
-          <a href="messages.html" class="card-link">Click for more details</a>
-        </div>
-      </section>
-    </div> <!-- end of col div -->
-
-    <div class="col-md-6">
-      <section class="card" id="labs">
-        <div class="card-body">
-          <h2 class="card-title"><i class="fas fa-flask"></i>Lab Results</h2>
-          <p class="card-text">
-            You have 1 pending lab result.
-          </p>
-        </div> <!-- end of card body div -->
-        <div class="card-footer">
-          <a href="labresults.html" class="card-link">Click for more details</a>
-        </div>
-      </section>
-    </div> <!-- end of col div -->
-
-  </div> <!-- end of row div -->
+  <h1><i class="fas fa-prescription-bottle-alt"></i>Medications</h1>
+  <div class="row" id="medTable">
+    <div class="col">
+      <table class="table table-hover shadow">
+        <thead>
+          <tr>
+            <th scope="col">
+              Medication
+            </th>
+            <th scope="col">
+              Dosage and Instructions
+            </th>
+            <th scope="col">
+              Prescribing Physician
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">Imitrex</td>
+            <td>25 mg tablet as needed for migraine headache; additional doses every 2 hours, not to exceed 200 mg/day</td>
+            <td>Dr. Cathy Butler</td>
+          </tr>
+          <tr>
+            <td scope="row">meloxicam</td>
+            <td>7.5 mg orally once a day</td>
+            <td>Dr. Raj Patel</td>
+          </tr>
+          <tr>
+            <td scope="row">loratadine</td>
+            <td>10 mg orally once a day</td>
+            <td>Dr. Jim Smith</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div><!-- container -->
 
 <section class="container m-0">
@@ -169,7 +143,6 @@
     </footer>
   </div>
 </section>
-
 
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>

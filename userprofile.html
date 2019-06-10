@@ -102,11 +102,13 @@
 <h1><i class="fas fa-user"></i>User Profile</h1>
   <div class="row">
     <div class="col-md-6">
-      <h2 class="text-center">Profile Information</h2>
+      <div id="userHeading">
+        <h2 class="text-left">Profile Information</h2>
+      </div>
         <form id="profileForm">
           <div class="form-row">
             <div class="form-group col-6">
-              <input type="text" class="form-control" placeholder="First Name"/>
+              <input type="text" class="form-control" placeholder="First Name" autofocus/>
             </div> <!-- end col -->
             <div class="col-6">
               <input type="text" class="form-control" placeholder="Last Name"/>
@@ -185,25 +187,37 @@
 
               </div> <!-- End form-group -->
               <div class="form-group col-3">
-                <input type="text" class="form-control" id="inputZip" placeholder="Zip" />
+                <input type="text" class="form-control" id="inputZip" placeholder="Zip" pattern="\d{5}([\-]\d{4})?" title="Must be 99999 or 99999-9999"/>
               </div> <!-- End form-group -->
             </div> <!-- End row -->
             <div class="form-row">
               <div class="form-group col-6">
-                <input type="text" class="form-control" id="inputHomePhone" placeholder="Home Phone Number" />
+                <input type="text" class="form-control" id="inputHomePhone" placeholder="Home Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999"/>
               </div> <!-- End form-group -->
             </div> <!-- End row -->
+
+                <div class="row">
+                  <div class="col-8 offset-2">
+                    <button type="submit" class="btn btn-danger btn-submit" style="width: 100%; margin-top: 10px;">Update Profile Information</button>
+                  </div>  <!-- end column div -->
+                </div> <!-- end row div -->
+
+
+
         </form>
   </div> <!-- end of col for first form -->
 
   <div class="col-sm-12 col-md-6">
-    <h2 class="text-center">Alert Preferences</h2>
+    <div id="userHeading">
+      <h2 class="text-left">Alert Preferences</h2>
+    </div>
     <form id="alertPref">
     <div class="form-row">
-      <div class="form-group col-6">
-        <input type="text" class="form-control" id="inputCellPhone" placeholder="Cell Phone Number" />
+      <div class="form-group col">
+        <input type="text" class="form-control" id="inputCellPhone" placeholder="Cell Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999"/>
       </div> <!-- End form-group -->
-      <div class="form-group col-6">
+
+      <div class="form-group col">
         <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" />
       </div> <!-- End form-group -->
     </div> <!-- End row -->
@@ -271,18 +285,29 @@
               <input class="form-check-input" type="checkbox" id="msgNone" />
               <label class="form-check-label" for="msgNone">None</label>
             </div>
+          </div>  <!-- end column div -->
+        </div> <!-- end row div -->
+            <div class="row">
+              <div class="col-8 offset-2">
+                <button type="submit" class="btn btn-danger btn-submit" style="width: 100%; margin-top: 10px;">Update Alert Preferences</button>
+
+
           </div>
       </div>
   </div> <!-- end row before form -->
   </form>
-  </div>
-  <div class="row">
-    <div class="col-12 offset-5">
-      <button type="button" class="btn" id="logout">Update Information</button>
-    </div>  <!-- end column div -->
-  </div> <!-- end row div -->
+</div> <!-- end of row -->
+
 
 </div><!-- container -->
+
+<section class="container m-0">
+  <div class="row" style="background: #264653; width: 100vw;">
+    <footer>
+      <p class="text-white">&copy; 2019 Angie Spencer.  All rights reserved.</p>
+    </footer>
+  </div>
+</section>
 
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>

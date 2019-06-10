@@ -1,6 +1,12 @@
 body{
-  background: #FFFBF0;
+  background: #FFF;
   color: black;
+/*  height: 100%; */
+}
+
+#container{
+  min-height: 100%;
+
 }
 
 .navbar{
@@ -25,9 +31,10 @@ body{
 
 #main{
   width:calc(100%-400px);
-  padding: 10px;
-  /*  margin-top: 20px; */
-
+/*  padding-left: 10px; */
+  overflow: visible;
+  padding-bottom: 25px;
+  padding-top: 10px;
 }
 
 #main h1{
@@ -59,6 +66,7 @@ body{
   min-width: 200px;
   max-width: 200px;
   min-height: 100vh;
+  margin-right: 10px;
 }
 
 #sidebar.active {
@@ -144,7 +152,7 @@ a, a:hover, a:focus{
   background-color: #2A9D8F;
   color: #FFFBF0;
   outline: 0;
-  border-radius: 0;
+  margin-left: 10px;
 }
 
  .btn:hover{
@@ -164,6 +172,10 @@ a, a:hover, a:focus{
    background-color: #E76F51;
  }
 
+ #appt h2{
+   font-size: 1.9em;
+ }
+
  #meds{
    background-color: #F4A261;
  }
@@ -176,7 +188,7 @@ a, a:hover, a:focus{
  }
 
  #labs{
-   background-color: #A6ACAF;
+   background-color: #E9C46A;
  }
 
 #column1 {
@@ -187,15 +199,6 @@ a, a:hover, a:focus{
   margin-left: 50px;
 }
 
-/* #btndiv {
-  margin: 0;
-  padding: 0;
-} */
-
-#menubtn {
-  outline: 0;
-  border-radius: 0;
-}
 #logout {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border-radius: 5px;
@@ -226,8 +229,8 @@ a, a:hover, a:focus{
   color: #000;
   background: #E9C46A;
   display: block;
-  height: 15em;
-  width: 15em;
+  height: 20em;
+  width: 20em;
   padding: 1em;
   /* Firef ox */
   -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
@@ -249,7 +252,7 @@ a, a:hover, a:focus{
 }
 
 #stickyNote ul li p{
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #stickyNote ul li a:hover, #stickyNote ul li a:focus{
@@ -263,7 +266,42 @@ a, a:hover, a:focus{
   z-index: 5;
 }
 
-#calendar {
-  max-width: 900px;
-  margin: 40px auto;
+#appointmentTable .table{
+  padding-left: 10px;
+}
+
+th {
+  background-color: #2A9D8F;
+  color: white;
+}
+
+#footer{
+  height: 25px;
+  position: relative;
+  margin-top: -25px;
+  clear: both;
+}
+
+/* Orange Button */
+.btn-submit {
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+
+.btn-danger {
+    background-color: #E76F51;
+    border-color: #E76F51;
+    color: white;
+    font-weight: 650;
+}
+
+#userHeading{
+  background-color: #2A9D8F;
+  color: #FFF;
+  padding: 0 10px;
+  margin: 0;
+}
+
+#noteEntry{
+  margin-top: 10px;
 }

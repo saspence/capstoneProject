@@ -1,5 +1,6 @@
-body{margin-top:20px;
-background:#eee;
+body{
+  margin-top:20px;
+  background:#eee;
 }
 
 .btn-compose-email {
@@ -11,6 +12,7 @@ background:#eee;
     background-color: #E76F51;
     border-color: #E76F51;
     color: white;
+    font-weight: 650;
 }
 
 .panel-teal .panel-heading {
@@ -55,6 +57,7 @@ form .form-group {
 }
 .nav-email li {
   background-color: white;
+  margin: 0 1em;
 }
 .nav-email li.active {
   background-color: transparent;
